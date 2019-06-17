@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "es2015",
+    "moduleResolution": "node",
+
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "strict": true
+  }
+}

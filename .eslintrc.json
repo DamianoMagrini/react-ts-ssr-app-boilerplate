@@ -1,0 +1,26 @@
+{
+  "extends": "eslint:recommended",
+
+  "env": {
+    "commonjs": true,
+    "browser": true,
+    "es6": true,
+    "worker": true
+  },
+
+  "overrides": [
+    {
+      "files": ["**/*.ts", "**/*.tsx"],
+      "excludedFiles": ["dist/**/*"]
+    }
+  ],
+
+  "parserOptions": { "ecmaVersion": 6 },
+
+  "rules": {
+    "indent": ["error", 2],
+    "newline-per-chained-call": ["error", {}],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"]
+  }
+}

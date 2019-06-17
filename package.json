@@ -1,0 +1,73 @@
+{
+	"name": "react-ts-ssr-app-boilerplate",
+	"version": "1.0.0",
+	"description": "React + TypeScript server-side-rendered application boilerplate, styled with styled-components.",
+
+	"author": "Damiano Magrini <damiano.magrini@gmail.com>",
+	"license": "CC-BY-SA-4.0",
+
+
+	"scripts": {
+    "start": "npm run hot:start",
+    "hot:start": "webpack-dev-server --open --config-name hot:client",
+    "ssr:start": "node dist/server/index.js",
+
+		"clean": "rimraf dist",
+    "lint": "eslint",
+
+    "development:dist": "run-s clean development:build",
+		"development:build": "run-p development:build:*",
+		"development:build:client": "webpack --config-name development:client",
+    "development:build:service-worker": "webpack --config-name development:service-worker",
+    "development:build:server": "webpack --config-name development:server",
+
+    "production:dist": "run-s clean production:build",
+		"production:build": "run-p production:build:*",
+		"production:build:client": "webpack --config-name production:client",
+    "production:build:service-worker": "webpack --config-name production:service-worker",
+    "production:build:server": "webpack --config-name production:server"
+	},
+
+
+	"dependencies": {
+    "mime-types": "latest",
+		"react": "latest",
+    "react-dom": "latest",
+    "react-helmet": "latest",
+		"react-router-dom": "latest",
+    "restify": "latest",
+    "styled-components": "^5.0.0-beta"
+	},
+
+	"devDependencies": {
+    "@types/copy-webpack-plugin": "latest",
+    "@types/html-webpack-plugin": "latest",
+    "@types/mime-types": "latest",
+		"@types/node": "latest",
+		"@types/react": "latest",
+		"@types/react-dom": "latest",
+		"@types/react-helmet": "latest",
+    "@types/react-router-dom": "latest",
+    "@types/restify": "latest",
+    "@types/styled-components": "latest",
+    "@types/webpack": "latest",
+    "@types/webpack-dev-server": "latest",
+
+    "copy-webpack-plugin": "latest",
+		"html-webpack-plugin": "latest",
+    "ts-loader": "latest",
+    "typescript-plugin-styled-components": "latest",
+		"webpack": "latest",
+		"webpack-cli": "latest",
+		"webpack-dev-server": "latest",
+
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "latest",
+    "eslint": "latest",
+
+    "npm-run-all": "latest",
+    "rimraf": "latest",
+    "ts-node": "latest",
+		"typescript": "latest"
+	}
+}

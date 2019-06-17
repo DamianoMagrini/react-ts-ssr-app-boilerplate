@@ -1,0 +1,21 @@
+{
+  "name": "React + TypeScript SSR App Boilerplate",
+  "short_name": "React + TS SSR",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#CCCCCC",
+  "background_color": "#EEEEEE",
+  "description": "React + TypeScript server-side-rendered application boilerplate, styled with styled-components.",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
