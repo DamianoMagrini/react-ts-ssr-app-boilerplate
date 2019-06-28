@@ -1,4 +1,6 @@
 {
+  "include": ["./**/*.ts"],
+
   "compilerOptions": {
     "module": "esnext",
     "target": "es2015",
@@ -8,12 +10,6 @@
     "allowSyntheticDefaultImports": true,
     "allowUnreachableCode": false,
     "esModuleInterop": true,
-    /*
-      While the service worker includes no JSX, this is needed because TSC will
-      type-check the whole project, and not only the `src/service-worker`
-      directory. I'm open for PRs fixing it.
-    */
-    "jsx": "react",
     "noImplicitAny": true,
     "sourceMap": true,
     "strict": true

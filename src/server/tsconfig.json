@@ -1,4 +1,6 @@
 {
+  "include": ["./**/*.ts", "./**/*.tsx"],
+
   "compilerOptions": {
     "module": "commonjs",
     "target": "es6",
